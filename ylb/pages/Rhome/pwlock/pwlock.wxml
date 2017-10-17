@@ -1,0 +1,30 @@
+<!--pages/Rhome/pwlock/pwlock.wxml-->
+<view class='m-cover m-bg'>
+  <view class=' m-boxText pwlock'>
+    <view class='title'>开锁密码为：</view>
+    <view class='pw'>{{password}}</view>
+    <view class='m-line'></view>
+    <view class='m-smallTip p1'>
+      此密码于<text>2017-10-12 15:15:15</text>过期失效
+      <view>
+      开锁步骤：先按“F/功能”键，输入密码后再按“#”号键
+      </view>
+    </view>
+    <view class='m-smallTip p2'>可通过以下方式分享</view>
+    <view class='saveBox'>
+      <view class='imgText'>
+        <image src='../../../assets/icons/nav-wodeshequ.png'></image>
+        <text class='m-smallTip'>QQ好友</text>
+      </view>
+      <view class='imgText'>
+        <image src='../../../assets/icons/nav-wodeshequ.png'></image>
+        <text class='m-smallTip'>微信好友</text>
+      </view>
+      <view class='imgText'>
+        <image src='../../../assets/icons/nav-wodeshequ.png'></image>
+        <text class='m-smallTip'>手机好友</text>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,6 @@
+/* pages/Rmy/myset/myset.wxss */
+@import "../../../assets/style/textarrow";
+
+.quitBtn{
+  margin: 30px;
+}

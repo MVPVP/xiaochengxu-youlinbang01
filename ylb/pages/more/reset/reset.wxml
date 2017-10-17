@@ -1,0 +1,57 @@
+<!--pages/more/reset/reset.wxml-->
+<view class='m-cover m-bg'>
+  <view class='header m-bbt'>
+    {{headText}}
+  </view> 
+  <view class='m-form'>
+    <block wx:if='{{step==1}}'>
+      <view class='rowF m-bbt'>
+        <image src='/assets/icons/phone.png' class='icon'></image>
+        <input placeholder-class='plhStyle' type='number' placeholder='手机号（账号）' auto-focus='true'></input>
+      </view>
+      <view class='btnBox'>
+        <button bindtap='getCodeBtn' type="default"> 获取验证码 </button>
+      </view>
+      <view class='infoBox'>
+        <checkbox color='red' class='fl' />
+        <navigator url='/pages/more/reset/reset'>我已阅读并同意相关服务条款</navigator>
+      </view>
+    </block>
+    <block wx:if='{{step==2}}'>
+      <view class='rowF m-bbt'>
+        <image src='/assets/icons/phone.png' class='icon'></image>
+        <input placeholder-class='plhStyle' type='number' placeholder='{{defaultPhome}}' disabled='true'/>
+      </view>
+      <view class='rowF m-bbt m-code'>
+        <input placeholder-class='plhStyle' type='number' maxlength='6' placeholder='填写短信验证码'/>
+        <!-- <view class='btn'><text>55s</text>重发</view>  -->
+        <view class='btn'>
+          <text wx:if='{{!chongfa}}' class='time'>{{daojishi}} s</text>
+          <text wx:if='{{!chongfa}}'>重发</text>
+          <text wx:if='{{chongfa}}' class='{{chongfa? "chongfabtn" : ""}}' bindtap='chongfaTap'>重发</text>
+        </view> 
+      </view>
+      <view class='btnBox'>
+        <button bindtap='nextStepBtn' type="default"> 下一步 </button>
+      </view>
+    </block>
+    <block wx:if='{{step==3}}'>
+      <view class='rowF m-bbt'>
+        <image src='/assets/icons/phone.png' class='icon'></image>
+        <input placeholder-class='plhStyle' type='number' placeholder='{{defaultPhome}}' disabled='true'/>
+      </view>
+      <view class='rowF m-bbt' >
+        <image src='/assets/icons/password.png' class='icon'></image>
+        <input placeholder-class='plhStyle' password placeholder='请输入新密码'/>
+      </view>
+      <view class='rowF m-bbt' >
+        <image src='/assets/icons/password.png' class='icon'></image>
+        <input placeholder-class='plhStyle' password placeholder='请再次输入新密码'/>
+      </view>
+      <view class='btnBox'>
+        <button bindtap='finishBtn' type="default"> 完成 </button>
+      </view>
+    </block>
+    
+  </view> 
+</view> 

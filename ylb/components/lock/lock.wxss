@@ -1,0 +1,20 @@
+.lock_wp{
+	margin: 0 auto 20rpx;
+}
+
+.canvasLock{
+  display: block;
+  margin: 0 auto;
+}
+
+.lock_title{
+	text-align: center;
+	color: #888;
+  font-size: 14px;
+}
+
+.lock_reset{
+  width: 300rpx;	
+  font-size: 12px;
+  color: #888;
+}

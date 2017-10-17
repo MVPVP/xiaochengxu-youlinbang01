@@ -1,0 +1,50 @@
+<!--pages/Rfind/index.wxml-->
+<scroll-view class='m-cover m-bg' scroll-y>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key='swipkey'>
+      <swiper-item bindtap='swiperTap' data-item='{{index+1}}' data-url='{{item}}'>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='switch'>
+    <view class='m-tabHead'>
+      <view bindtap='switchTab' data-params='1' class='tuijian {{tabNumber==1?"cur":""}}'>推荐</view>
+      <view bindtap='switchTab' data-params='2' class='zixun {{tabNumber==2?"cur":""}}'>资讯</view>
+      <view bindtap='switchTab' data-params='3' class='toutiao {{tabNumber==3?"cur":""}}'>头条</view>
+    </view>
+    <view class='m-tabContain'>
+      <view class='tuijian' wx:if="{{tabNumber==1}}">
+        <view bindtap='toArticleDetail'  class='m-dl m-bbt' wx:for='{{articleList.tuijian}}'  data-url='{{item.img}}' data-title='{{item.title}}' wx:key='tuijiankey'>
+          <image class='m-dt' src='{{item.img}}'></image>
+          <view class='m-dd'>
+            <text class='tit'>{{item.title}}</text>
+            <text>{{item.title}}</text>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='zixun' wx:if="{{tabNumber==2}}">
+        <view bindtap='toArticleDetail'  class='m-dl m-bbt' wx:for='{{articleList.zixun}}' data-url='{{item.img}}' data-title='{{item.title}}' wx:key='zixunkey'>
+          <image class='m-dt' src='{{item.img}}'></image>
+          <view class='m-dd'>
+            <text class='tit'>{{item.title}}</text>
+            <text>{{item.title}}</text>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='toutiao'  wx:if="{{tabNumber==3}}">
+        <view bindtap='toArticleDetail'  class='m-dl m-bbt' wx:for='{{articleList.toutiao}}' data-url='{{item.img}}' data-title='{{item.title}}' wx:key='toutiaokey'>
+          <image class='m-dt' src='{{item.img}}'></image>
+          <view class='m-dd'>
+            <text class='tit'>{{item.title}}</text>
+            <text>{{item.title}}</text>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

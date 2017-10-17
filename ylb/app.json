@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/more/login/login",
+    "pages/more/reg/reg",
+    "pages/more/reset/reset",
+    "pages/more/gestureLock/gestureLock",
+    "pages/logs/logs",
+
+    "pages/Rhome/index",
+    "pages/Rhome/menjin/menjin",
+    "pages/Rhome/fuwu/fuwu",
+    "pages/Rhome/pwlock/pwlock",
+
+    "pages/Rfind/index",
+    "pages/Rfind/article/article",
+
+    "pages/Rmy/index",
+    "pages/Rmy/myprofile/myprofile",
+    "pages/Rmy/myset/myset",
+
+    "pages/other/index",
+    "pages/other/map/map",
+    "pages/other/animate/animate",
+    "pages/other/video/video"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E50E0B",
+    "navigationBarTitleText": "友邻邦",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#FF9300",
+    "list": [
+      {
+        "pagePath": "pages/Rhome/index",
+        "text": "主页",
+        "iconPath":"assets/icons/home.png",
+        "selectedIconPath":"assets/icons/homehover.png"
+      },
+      {
+        "pagePath": "pages/Rfind/index",
+        "text": "发现",
+        "iconPath": "assets/icons/find.png",
+        "selectedIconPath": "assets/icons/findhover.png"
+      },
+      {
+        "pagePath": "pages/Rmy/index",
+        "text": "我的",
+        "iconPath": "assets/icons/my.png",
+        "selectedIconPath": "assets/icons/myhover.png"
+      }
+    ]
+  }
+
+}

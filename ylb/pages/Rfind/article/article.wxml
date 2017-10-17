@@ -1,0 +1,19 @@
+<!--pages/Rfind/article/article.wxml-->
+<scroll-view class='m-cover m-bg' scroll-y>
+  <view class='header'>
+    <text class='title'>{{title}}</text>
+    <view>
+      <text class='time'>2017-10-10</text>
+      <text class='writer'>赛翼智能</text>
+    </view>
+  </view>
+  <view class='contain'>
+    <image class='imgs' src='{{imgurl}}'></image>
+    <view class='p'>
+    友邻邦APP是一款基于移动互联网、物联网技术开发的智慧社区手机客户端。小区业主可通过APP随时随地实现远程门禁开锁，可视对讲，视频监视、访客授权等功能，同时还具有物业信息接收、咨询投诉、报事报修等物业服务功能。专为小区住户量身定做，乐享智慧生活！
+    </view>
+        <view class='p'>
+    友邻邦APP是一款基于移动互联网、物联网技术开发的智慧社区手机客户端。小区业主可通过APP随时随地实现远程门禁开锁，可视对讲，视频监视、访客授权等功能，同时还具有物业信息接收、咨询投诉、报事报修等物业服务功能。专为小区住户量身定做，乐享智慧生活！
+    </view>
+  </view>
+</scroll-view>

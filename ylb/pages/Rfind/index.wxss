@@ -1,0 +1,22 @@
+/* pages/Rfind/index.wxss */
+
+.switch{
+  background: #fff;
+}
+.m-tabHead{
+  height: 38px;
+  line-height: 36px;
+}
+.m-tabHead>view.cur{
+  color: #333;
+  border-bottom: 2px solid #B4251F;
+}
+.m-tabHead>view{
+  width: 50px;
+  float: left;
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  height: 36px;
+  margin: 0 10px;
+}

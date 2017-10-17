@@ -1,0 +1,16 @@
+/* pages/more/login/login.wxss */
+@import "../../../assets/style/form.wxss";
+.header{
+  height: 25%;
+}
+.m-logo{
+  top: 10%;
+}
+
+.infoBox{
+  font-size: 14px;
+  color: #3879D9;
+}
+.infoBox>navigator{
+  padding: 5px 10px;
+}

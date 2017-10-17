@@ -1,0 +1,3 @@
+/* pages/more/reset/reset.wxss */
+@import "../reg/reg.wxss";
+@import "../../../assets/style/form.wxss";

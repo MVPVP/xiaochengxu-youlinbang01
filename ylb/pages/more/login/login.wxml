@@ -1,0 +1,27 @@
+<!--pages/more/login/login.wxml-->
+<view class='m-cover m-bg'>
+  <view class='header m-bbt'>
+    <image class='m-logo' src='/assets/imgs/logo.png'></image>
+  </view> 
+   <view class='m-form'>
+    <view class='rowF'>
+      <image src='/assets/icons/phone.png' class='icon'></image>
+      <input class='m-bbt' placeholder-class='plhStyle' type='number' placeholder='手机号（账号）' auto-focus='true'></input>
+      <!-- <image src='/assets/icons/arrowbottom.png' class='icon right'></image> -->
+    </view>
+    <view class='rowF m-bbt' >
+      <image src='/assets/icons/password.png' class='icon'></image>
+      <input placeholder-class='plhStyle' password placeholder='友邻邦密码'></input>
+      <!-- <image src='/assets/icons/eye.png' class='icon right'></image> -->
+    </view>
+    <view class='btnBox'>
+      <button type="warn" bindtap="loginFunc"> 登录 </button>
+    </view>
+    
+    <view class='infoBox'>
+      <navigator url='/pages/more/reset/reset' class='fl'>忘记密码?</navigator>
+      <navigator url='/pages/more/reg/reg' class='fr'>新用户注册</navigator>
+    </view>
+  </view> 
+
+</view>

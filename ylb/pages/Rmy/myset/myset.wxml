@@ -1,0 +1,50 @@
+<!--pages/Rmy/myset/myset.wxml-->
+<scroll-view class='m-cover m-bg' scroll-y>
+  <view class='m-box'>
+    <view class='item'>
+      <text class='label'>修改密码</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+    <view class='m-line'></view>
+    <view class='item'>
+      <text class='label'>手势</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+
+  <view class='m-box'>
+    <view class='item'>
+      <text class='label'>允许消息推送</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+    <view class='m-line'></view>
+    <view class='item'>
+      <text class='label'>使用流量接通视频时是否提示</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+    <view class='m-line'></view>
+    <view class='item'>
+      <text class='label'>勿扰模式</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+    <view class='m-line'></view>
+    <view class='item'>
+      <text class='label'>视频对讲清晰度</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+
+  <view class='m-box'>
+    <view class='item'>
+      <text class='label'>蓝牙开锁</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+  <view class='m-box'>
+    <view class='item'>
+      <text class='label'>电话模式</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+  <button class='quitBtn' type='warn'>退出当前账号</button>
+</scroll-view>

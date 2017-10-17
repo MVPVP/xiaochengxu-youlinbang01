@@ -1,0 +1,14 @@
+<import src="../../../components/lock/lock.wxml" />
+
+<view class="index">
+  <image src='{{hasUserInfo ? userInfo.avatarUrl : "../../../assets/imgs/head.jpg"}}'  class='header'>
+    <view class='imgBg'>
+      <image src='{{hasUserInfo ? userInfo.avatarUrl : "../../../assets/imgs/head.jpg"}}' class='pic'></image>
+    </view>   
+    <view class='phone'>{{hasUserInfo ? userInfo.nickName : '最强青铜'}}</view>
+    <view class='info'>欢迎回来</view>
+    <view class='mask'></view>
+  </image>
+
+  <template is = "lock" data = "{{ ...lockData }}"></template> 
+</view>

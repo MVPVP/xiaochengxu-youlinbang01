@@ -1,0 +1,46 @@
+<!--pages/Rmy/myprofile/myprofile.wxml-->
+<view class='m-cover m-bg'>
+  <view class='m-box'>
+    <view class='item'>
+      <text class='title'>基础资料</text>
+    </view>
+    
+    <view class='m-line'></view>
+    <view class='item touxiang' bindtap='touxiangTap'>
+      <text class='label'>头像</text>
+      <image class='info pic' src='{{hasUserInfo ? userInfo.avatarUrl : "../../../assets/imgs/head.jpg"}}'></image>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+
+  <view class='m-box'>
+    <view class='item nick'>
+      <text class='label'>昵称</text>
+      <text class='info'>{{hasUserInfo ? userInfo.nickName : '最强青铜'}}</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+    <view class='m-line'></view>
+    <view class='item'>
+      <text class='label'>签名</text>
+      <text class='info'>祝你早安，午安，晚安！</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+
+  <view class='m-box'>
+    <view class='item email'>
+      <text class='label'>邮箱</text>
+      <text class='info'>99999@qq.com</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+
+  <view class='m-box'>
+    <view class='item email'>
+      <text class='label'>电话</text>
+      <text class='info'>159*****300@qq.com</text>
+      <image class='arrow' src='../../../assets/icons/arrowright.png'></image>
+    </view>
+  </view>
+
+</view>

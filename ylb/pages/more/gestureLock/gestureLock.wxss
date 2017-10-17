@@ -1,0 +1,31 @@
+@import '../../../components/lock/lock.wxss';
+@import '../../Rmy/index.wxss';
+/* .index-hd {
+  padding: 80rpx;
+  text-align: center;
+  padding: 20rpx 26rpx 40rpx;
+}
+
+.index-desc {
+  margin-top: 20rpx;
+  color: #888;
+  font-size: 28rpx;
+} */
+.header{
+  height: 190px;
+}
+.header .imgBg{
+  top:25px;
+}
+.header .phone {
+  top: 130px;
+}
+.header .info{
+  top:160px;
+}
+
+button{
+  width: 400rpx;
+}
+
+

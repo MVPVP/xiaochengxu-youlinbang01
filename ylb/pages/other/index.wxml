@@ -1,0 +1,9 @@
+<!--pages/other/index.wxml-->
+<!-- 地图；拍照；录像；扫描；视频；图片设置； -->
+<button bindtap='mapTap' type='default'>地图</button>
+<button bindtap='photoTap' type='default'>拍照</button>
+<button bindtap='recordTap' type='default'>录像</button>
+<button bindtap='scancodeTap' type='default'>扫描</button>
+<button bindtap='videoTap' type='default'>视频</button>
+<button type='default'>canvas</button>
+<button bindtap='animationTap' type='default'>动画</button>

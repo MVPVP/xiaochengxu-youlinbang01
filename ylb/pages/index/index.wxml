@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class='v-firstLoad m-cover' hidden='{{!firstLoadBool}}' animation='{{animationDataA}}' >
+<!-- hidden='{{!firstLoadBool}}' -->
+  <image class=' m-cover' src="/assets/imgs/firstLoad.png"></image>
+</view>
+
+<view class='v-loginRegSelect  m-cover' hidden='{{firstLoadBool}}' animation='{{animationDataB}}'>
+  <image class=' m-cover' src="/assets/imgs/loginBg.png"></image>
+  <image class='m-logo' src='/assets/imgs/logo.png'></image>
+
+  <navigator class='btn other' url='/pages/other/index'>小程序其它案例</navigator> 
+  <navigator class='btn' url='/pages/more/login/login'>手机号登录</navigator> 
+  <navigator class='btn register' url='/pages/more/reg/reg'>注册</navigator>
+  <navigator class='btn loginsuccess' url='/pages/more/gestureLock/gestureLock'>欢迎回来</navigator>
+</view>
+
+<view class="container" hidden>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto" bindtap="sseett">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

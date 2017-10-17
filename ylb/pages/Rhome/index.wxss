@@ -1,0 +1,113 @@
+/* pages/Rhome/index.wxss */
+/* nav */
+@import "../../assets/style/navlist";
+
+
+
+.lockList{
+  height: 115px;
+  width: 100%;
+  background: #fff;
+}
+.lockList .item{
+  text-align: center;
+  width: 33%;
+  float: left;
+  height: 115px;
+}
+.lockList .item image{
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin: 20px auto 10px;
+}
+.lockList .item text{
+  color:#A4A4A4;
+  font-size: 16px;
+}
+
+/* 弹窗 */
+.f-dialog{
+
+}
+.f-mask{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.f-main{
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  right: 10%;
+  background: #fff;
+  z-index: 10;
+}
+.m-lock{
+  padding:20px 7%;
+  text-align:center;
+}
+.m-lock .m-smallTip{
+
+  height:50px;
+}
+.m-lock .m-smallTip .tit{
+  margin: 0 5px;
+}
+.m-lock .video,.m-lock .password{
+  height:45px;
+  line-height:45px;
+  color:#F23026;
+  font-size:18px;
+}
+.m-lock .slideBox{
+  height:43px;
+  border:1px solid #D5D3E2;
+  margin:20px 0;
+  line-height:43px;
+  background:#D0CAEC;
+  color:#fff;
+  font-size:16px;
+  position:relative;
+}
+.m-lock .slide{
+  height:43px;
+  width:30%;
+  background:#fff;
+  position:absolute;
+  top:0px;
+  left:0;
+}
+.m-lock .slide>icon{
+  width:0;
+  height:0;
+  border-width:10px;
+  border-style:dashed dashed dashed solid;
+  border-color:transparent transparent transparent #D0CAEC;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-10px 0 0 -5px;
+}
+.huaguo{
+  width:50px;
+  height:43px;
+  position:absolute;
+  top:0px;
+  background:#fff;
+  opacity:0.8;
+  background:linear-gradient(to right, rgba(255, 255, 255,0.5), rgba(255, 255, 255,0.9));
+}
+.m-lock .btnBox button{
+  height:45px;
+  line-height:45px;
+  font-size:18px;
+}
+.m-lock .m-line{
+  margin:0;
+}

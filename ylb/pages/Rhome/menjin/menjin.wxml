@@ -1,0 +1,27 @@
+<!--pages/Rhome/menjin/menjin.wxml-->
+<scroll-view class='m-cover m-bg menjin' scroll-y>
+  <view class='item'>
+    <navigator class='upload'>
+      <image src='../../../assets/icons/add.png'></image>
+    </navigator>
+    <navigator class='tit'>
+        赛翼智慧社区-西座-3楼-东门
+    </navigator>
+  </view>
+  <view class='item'>
+    <navigator class='upload'>
+      <image src='../../../assets/icons/add.png'></image>
+    </navigator>
+    <navigator class='tit'>
+        赛翼智慧社区-西座-3楼-东门
+    </navigator>
+  </view>
+    <view class='item'>
+    <navigator class='upload'>
+      <image src='../../../assets/icons/add.png'></image>
+    </navigator>
+    <navigator class='tit'>
+        赛翼智慧社区-西座-3楼-东门
+    </navigator>
+  </view>
+</scroll-view>

@@ -1,0 +1,41 @@
+<!--pages/Rhome/fuwu/fuwu.wxml-->
+<scroll-view class='m-cover m-bg menjin' scroll-y>
+  <view class='navList'>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wodeshequ.png'></image>
+      <text>我的社区</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyebaoxiu.png'></image>
+      <text>业务报修</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyetousu.png'></image>
+      <text>业务投诉</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyejiaofei.png'></image>
+      <text>业务缴费</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wodeshequ.png'></image>
+      <text>我的社区</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyebaoxiu.png'></image>
+      <text>业务报修</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyetousu.png'></image>
+      <text>业务投诉</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyejiaofei.png'></image>
+      <text>业务缴费</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../../assets/icons/nav-wuyejiaofei.png'></image>
+      <text>业务缴费</text>
+    </navigator>
+  </view>
+</scroll-view>

@@ -1,0 +1,104 @@
+<!--pages/Rhome/index.wxml-->
+<scroll-view class='m-cover m-bg' scroll-y>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key='swiperkey'>
+      <swiper-item bindtap='swiperTap' data-item='{{index+1}}' data-url='{{item}}'>
+        <image src="{{item}}" mode='aspectFill' class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='navList'>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wodeshequ.png'></image>
+      <text>我的社区</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wuyebaoxiu.png'></image>
+      <text>业务报修</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wuyetousu.png'></image>
+      <text>业务投诉</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wuyejiaofei.png'></image>
+      <text>业务缴费</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wodeshequ.png'></image>
+      <text>我的社区</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wuyebaoxiu.png'></image>
+      <text>业务报修</text>
+    </navigator>
+    <navigator class='item' url=''>
+      <image src='../../assets/icons/nav-wuyetousu.png'></image>
+      <text>业务投诉</text>
+    </navigator>
+    <navigator class='item' url='fuwu/fuwu'>
+      <image src='../../assets/icons/more.png'></image>
+      <text>更多</text>
+    </navigator>
+  </view>
+
+  <view class='m-titleBox'>
+    <text class='fl'>门禁</text>
+    <navigator class='fr' url='menjin/menjin'>更多></navigator>
+  </view>
+  <view class='lockList'>
+    <view wx:for='{{menjinList.list}}' bindtap='lockBtnTap' data-name='{{item.name}}' class='item'  wx:key='locklistkey'>
+      <image src='{{menjinList.iconURL}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class='m-titleBox'>
+    <text class='fl'>推荐</text>
+    <view class='fr' bindtap='switchToFind'>更多></view>
+  </view>
+  <view>
+    <view wx:for='{{articleList}}' bindtap='toArticleDetail' class='m-dl m-bbt' data-url='{{item.img}}' data-title='{{item.title}}' wx:key='articlekey'>
+      <image class='m-dt' src='{{item.img}}' mode='aspectFill'></image>
+      <view class='m-dd'>
+        <text class='tit'>{{item.title}}</text>
+        <text>{{item.title}}</text>
+        <text>{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='f-dialog' wx:if='{{lockDialogBoll}}'>
+    <view class='f-mask'></view>
+    <view class='f-main m-lock'>
+      <view class='m-smallTip'>
+        此操作可远程操作<text class='tit'>{{curLockName}}</text>门锁
+        <view>请谨慎操作</view>
+      </view>
+      <view class='m-line'></view>
+      <view class='video'>
+        门口视频
+      </view>
+      <view class='m-line'></view>
+      <view bindtap='pwLockTap' class='password'>
+        密码开锁
+      </view>
+      <view class='m-line'></view>
+      <view class='slideBox'>
+        <view class='huaguo' style='width:{{moveToLeft}}px'></view>
+        <view class='slide' catchtouchmove='touchmoveTap' catchtouchend='touchendTap' catchtouchstart='touchstartTap' style='left:{{moveToLeft}}px'>
+        <icon></icon>
+        </view>
+        右滑开锁
+      </view>
+      <view class='btnBox'>
+        <button type='warn' bindtap='closeLockDialog'>返回</button>
+      </view>
+    </view>
+  </view>
+  
+
+
+</scroll-view>

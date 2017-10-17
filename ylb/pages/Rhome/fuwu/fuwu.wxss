@@ -1,0 +1,6 @@
+/* pages/Rhome/fuwu/fuwu.wxss */
+@import "../../../assets/style/navlist";
+
+.navList{
+  background:none;
+}
