@@ -135,38 +135,40 @@ Page({
     })
   },
   lockBtnTap(event){
+    var _this = this;
     this.setData({
       lockDialogBoll: true,
       curLockName: event.currentTarget.dataset.name
+    },function(){
+      console.log('laiba')
+      //计算弹窗滑动开门盒子
+      wx.createSelectorQuery().selectAll('.slideBox').boundingClientRect(function (rects) {
+        console.log(1111111111111111111111);
+        rects.forEach(function (rect) {
+          // rect.id      // 节点的ID
+          // rect.dataset // 节点的dataset
+          // rect.left    // 节点的左边界坐标
+          // rect.right   // 节点的右边界坐标
+          // rect.top     // 节点的上边界坐标
+          // rect.bottom  // 节点的下边界坐标
+          // rect.width   // 节点的宽度
+          // rect.height  // 节点的高度
+          _this.setData({
+            slideBoxWidth: rect.width
+          })
+          console.log('slideBoxWidth:' + rect.width);
+        })
+      }).exec()
+      wx.createSelectorQuery().selectAll('.slide').boundingClientRect(function (rects) {
+        rects.forEach(function (rect) {
+          _this.setData({
+            slideWidth: rect.width
+          })
+          console.log('slideWidth:' + rect.width);
+        })
+      }).exec()
     });
-    console.log('laiba')
-    //计算弹窗滑动开门盒子
-    var _this = this;
-    wx.createSelectorQuery().selectAll('.slideBox').boundingClientRect(function (rects) {
-      console.log(1111111111111111111111);
-      rects.forEach(function (rect) {
-        // rect.id      // 节点的ID
-        // rect.dataset // 节点的dataset
-        // rect.left    // 节点的左边界坐标
-        // rect.right   // 节点的右边界坐标
-        // rect.top     // 节点的上边界坐标
-        // rect.bottom  // 节点的下边界坐标
-        // rect.width   // 节点的宽度
-        // rect.height  // 节点的高度
-        _this.setData({
-          slideBoxWidth: rect.width
-        })
-        console.log('slideBoxWidth:'+rect.width);
-      })
-    }).exec()
-    wx.createSelectorQuery().selectAll('.slide').boundingClientRect(function (rects) {
-      rects.forEach(function (rect) {
-        _this.setData({
-          slideWidth: rect.width
-        })
-        console.log('slideWidth:' + rect.width);
-      })
-    }).exec()
+
 
   },
 
